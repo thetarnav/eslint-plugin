@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "Node16",
+		"moduleResolution": "Node16",
+		"noEmit": false,
+		"emitDeclarationOnly": true,
+		"declaration": true,
+		"declarationMap": true,
+		"outDir": "types"
+	},
+	"include": ["rules/**/*"]
+}

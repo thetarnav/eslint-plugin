@@ -1,0 +1,42 @@
+{
+	"name": "@nothing-but/eslint-plugin",
+	"version": "0.2.2",
+	"license": "MIT",
+	"author": "Damian Tarnawski <gthetarnav@gmail.com>",
+	"contributors": [],
+	"homepage": "https://github.com/thetarnav/nothing-but/tree/main/packages/eslint#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thetarnav/nothing-but.git"
+	},
+	"bugs": {
+		"url": "https://github.com/thetarnav/nothing-but/issues"
+	},
+	"private": false,
+	"sideEffects": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"rules",
+		"types"
+	],
+	"main": "./rules/rules.js",
+	"types": "./types/rules.d.ts",
+	"scripts": {
+		"build": "tsc -p ./tsconfig.build.json",
+		"test": "node --test"
+	},
+	"dependencies": {
+		"@typescript-eslint/utils": "^6.11.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.5.4",
+		"@typescript-eslint/parser": "^6.11.0",
+		"@typescript-eslint/rule-tester": "^6.11.0"
+	},
+	"peerDependencies": {
+		"eslint": "^6.0.0 || ^7.0.0 || ^8.0.0",
+		"typescript": "~5.2.0"
+	}
+}
